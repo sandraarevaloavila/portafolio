@@ -7,8 +7,8 @@ from rest_framework.response import Response
 @api_view(['POST', 'GET'])
 def contact_api_view(request):
     if request.method == 'GET':
-        mensajes = mensajes.objects.all()
-        mensajes_serializer= mensajesSerializer(mensajes, many= True)
+        mjs = mensajes.objects.all()
+        mensajes_serializer= mensajesSerializer(mjs, many= True)
         return Response (mensajes_serializer.data)
     
     if request.method == 'POST':
