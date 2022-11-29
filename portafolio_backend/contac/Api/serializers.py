@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from contac.models import mensajes
+from portafolio_backend.contac.models import mensajes
 
 class mensajesSerializer(serializers.ModelSerializer):
     class meta:
